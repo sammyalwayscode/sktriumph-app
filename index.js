@@ -1,7 +1,7 @@
 const express = require("express");
 require("./config/db");
 const cors = require("cors");
-const PORT = 2221;
+const PORT = 2221 || process.env.PORT;
 const app = express();
 const productRoute = require("./router/productRouter");
 const adminRoute = require("./router/adminRouter");
