@@ -9,7 +9,7 @@ const blogRoute = require("./router/blogRouter");
 const storeRoute = require("./router/stockListRouter");
 const shipRoute = require("./router/shppingRouter");
 const orderRoute = require("./router/orderedRouter");
-app.use(cors());
+app.use(cors({ origin: "*" }));
 app.use(express.json());
 
 app.get("/", (req, res) => {
