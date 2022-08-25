@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
-// const MONGOATLAS_URI= ""
+const MONGOATLAS_URI =
+  "mongodb+srv://W8PypVqIRJXDReMh:W8PypVqIRJXDReMh@cluster0.1nq2x.mongodb.net/sktriumph?retryWrites=true&w=majority";
 const MONGOCOMPASS_URI = "mongodb://localhost/skintriumph";
 
-mongoose.connect(MONGOCOMPASS_URI);
+mongoose.connect(MONGOATLAS_URI);
 mongoose.connection
   .on("open", () => {
     console.log("Connected to DB🏬");
