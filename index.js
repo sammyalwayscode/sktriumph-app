@@ -26,3 +26,5 @@ app.use("/api/order", orderRoute);
 app.listen(PORT, () => {
   console.log(`Server on PORT: ${PORT}`);
 });
+
+module.exports = app;
